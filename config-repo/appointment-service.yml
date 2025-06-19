@@ -1,0 +1,37 @@
+spring:
+  application:
+    name: appointment-service
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/appointment-db
+    username: user
+    password: user
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    database-platform: org.hibernate.dialect.MySQL8Dialect
+
+  kafka:
+    bootstrap-servers: localhost:9092
+
+  cloud:
+    config:
+      enabled: true
+
+server:
+  port: 8082
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+    fetch-registry: true
+    register-with-eureka: true
+
+logging:
+  level:
+    root: INFO
+    org.hibernate.SQL: DEBUG
