@@ -1,0 +1,25 @@
+spring:
+  application:
+    name: email-service
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: timefass@gmail.com
+    password: eqop wpuz uzmo xlpa
+    properties:
+      mail: 
+        smtp:
+          starttls: 
+            enable: true
+          ssl:  
+            trust: *
+  cloud:
+    config:
+      enabled: true
+server:
+  port: 8084
+
+logging:
+  level:
+    root: INFO
+    org.springframework.web: DEBUG
