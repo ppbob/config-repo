@@ -21,5 +21,11 @@ server:
 
 logging:
   level:
-    root: INFO
-    org.springframework.web: DEBUG
+    org.springframework.boot.context.config: DEBUG
+    org.springframework.cloud.config: DEBUG
+eureka:
+  client:
+    service-url:
+      defaultZone: http://discovery-server:8761/eureka/
+    register-with-eureka: true
+    fetch-registry: true
