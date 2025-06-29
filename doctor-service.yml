@@ -1,6 +1,12 @@
 spring:
   application:
     name: doctor-service
+  config:
+    import: "optional:configserver:"
+
+  cloud:
+    config:
+      uri: http://config-server:8888
 
   data:
     mongodb:

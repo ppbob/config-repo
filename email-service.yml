@@ -16,6 +16,10 @@ spring:
   cloud:
     config:
       enabled: true
+      uri: http://config-server:8888
+  config:
+    import: "optional:configserver:"
+      
 server:
   port: 8085
 
