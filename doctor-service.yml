@@ -4,7 +4,7 @@ spring:
 
   data:
     mongodb:
-      uri: mongodb://localhost:27017/doctor-db
+      uri: mongodb://mongo:27017/doctor-db
 
   cloud:
     config:
