@@ -5,10 +5,11 @@ spring:
     host: smtp.gmail.com
     port: 587
     username: timefass@gmail.com
-    password: eqop wpuz uzmo xlpa
+    password: fghw falo cqid ccqf
     properties:
       mail: 
         smtp:
+          auth: true
           starttls: 
             enable: true
           ssl:  
